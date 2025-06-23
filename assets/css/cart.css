@@ -1,0 +1,194 @@
+:root {
+    --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --heading-font: "Cardo",  sans-serif;
+    --nav-font: "Inter",  sans-serif;
+  }
+  
+  /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+  :root { 
+    --background-color: #000000; /* Background color for the entire website, including individual sections */
+    --default-color: #fafafa; /* Default color used for the majority of the text content across the entire website */
+    --heading-color: #ffffff; /* Color for headings, subheadings and title throughout the website */
+    --accent-color: #a72727; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+    --contrast-color: #2c2d2d; /* The contrast color is used for elements when the background color is one of the heading, accent, or default colors. Its purpose is to ensure proper contrast and readability when placed over these more dominant colors */
+  }
+  
+  /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+  :root {
+    --nav-color: rgba(255, 255, 255, 0.5);  /* The default color of the main navmenu links */
+    --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
+    --nav-dropdown-background-color: #161718; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+    --nav-dropdown-color: rgba(255, 255, 255, 0.5); /* Used for navigation links of the dropdown items in the navigation menu. */
+    --nav-dropdown-hover-color: #ffffff; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  }
+  
+  /* Smooth scroll */
+  :root {
+    scroll-behavior: smooth;
+  }
+  
+  /*--------------------------------------------------------------
+  # General
+  --------------------------------------------------------------*/
+body {
+    color: var(--default-color);
+    background-color: var(--background-color);
+    font-family: var(--default-font);
+}
+
+/* Heading Styles */
+.heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.heading h3 {
+    font-size: 2.5rem;
+    color: var(--heading-color);
+}
+
+.heading p {
+    font-size: 1rem;
+    color: var(--default-color);
+}
+
+.heading a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+/* Shopping Cart Styles */
+.shopping-cart {
+    padding: 20px;
+}
+
+.shopping-cart .title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--heading-color);
+}
+
+.shopping-cart .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.shopping-cart .box {
+    background: #303030;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    width: 250px;
+}
+
+.shopping-cart .box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.shopping-cart .box .name {
+    font-size: 1.2rem;
+    color: var(--heading-color);
+    margin: 10px 0;
+}
+
+.shopping-cart .box .price,
+.shopping-cart .box .sub-total {
+    font-size: 1.1rem;
+    color: var(--accent-color);
+}
+
+.shopping-cart .box .fas.fa-times {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: var(--accent-color);
+    cursor: pointer;
+}
+
+.bi b {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: var(--accent-color);
+    cursor: pointer;
+}
+
+
+.shopping-cart .box form {
+    margin: 10px 0;
+}
+
+.shopping-cart .box input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    margin-right: 5px;
+    border: 1px solid var(--default-color);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.shopping-cart .box .option-btn {
+    background: var(--accent-color);
+    color: var(--default-color);
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.shopping-cart .box .option-btn:hover {
+    background: var(--default-color);
+    color: var(--accent-color);
+}
+
+.shopping-cart .delete-btn,
+.shopping-cart .btn {
+    background: var(--accent-color);
+    color: var(--default-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.shopping-cart .delete-btn:hover,
+.shopping-cart .btn:hover {
+    background: var(--default-color);
+    color: var(--accent-color);
+}
+
+.shopping-cart .delete-btn.disabled,
+.shopping-cart .btn.disabled {
+    background: #000000;
+    cursor: not-allowed;
+}
+
+.cart-total {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cart-total p {
+    font-size: 1.5rem;
+    color: var(--heading-color);
+}
+
+.cart-total .flex {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cart-total .flex a {
+    text-decoration: none;
+}

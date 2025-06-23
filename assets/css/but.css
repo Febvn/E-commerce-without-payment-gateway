@@ -1,0 +1,11 @@
+.btn-order {
+    background-color: #b52202;
+    color: #FFF;
+    padding: 10px 20px ;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+
+}
