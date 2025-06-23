@@ -1,7 +1,5 @@
 # E-commerce Without Payment Gateway
 
-![Project Logo](https://via.placeholder.com/150x80?text=SEVENMART+Logo)
-
 [![License](https://img.shields.io/badge/license-Private-red.svg)](https://github.com/Febvn/E-commerce-without-payment-gateway)
 [![PHP](https://img.shields.io/badge/PHP-7.x-blue.svg)](https://www.php.net/)
 [![MySQL](https://img.shields.io/badge/MySQL-8.x-orange.svg)](https://www.mysql.com/)
@@ -10,7 +8,7 @@
 ---
 
 ## 🌐 **Demo**
-🚀 [Lihat Demo](http://localhost/SEVENMART) *(ganti link ini dengan URL hosting kamu nanti)*  
+🚀 [Lihat Demo]) https://7mart.ct.ws/ 
 
 ---
 
